@@ -40,37 +40,39 @@ async function question1() {
     name: "question1",
     type: "list",
     message: "Rice is originally from: ",
-    choices: ["USA", "Japan", "France", "Brazil"],
+    choices: ["Europe", "America", "Africa", "Asia"],
   });
-  return handleAnswer(answers.question1 == "Japan");
+  return handleAnswer(answers.question1 == "Asia");
 }
 
 async function question2() {
   const answers = await inquirer.prompt({
     name: "question2",
     type: "list",
-    message: "Pergunta 2!!!",
-    choices: ["lalala", "lalal", "lalalalalal", "resposta"],
+    message: "Which of these foods is known to be French: ",
+    choices: ["hamburguer", "beans", "croissant", "pasta"],
   });
-  return handleAnswer(answers.question2 == "resposta");
+  return handleAnswer(answers.question2 == "croissant");
 }
 async function question3() {
   const answers = await inquirer.prompt({
     name: "question3",
     type: "list",
-    message: "Pergunta 3!!!",
-    choices: ["lalala", "lalal", "lalalalalal", "resposta"],
+    message: "Which of these is a citrus fruit: ",
+    choices: ["apple", "orange", "grapes", "banana"],
   });
-  return handleAnswer(answers.question3 == "resposta");
+  return handleAnswer(answers.question3 == "orange");
 }
 async function question4() {
   const answers = await inquirer.prompt({
     name: "question4",
     type: "list",
-    message: "Pergunta 4!!!!!!",
-    choices: ["lalala", "lalal", "lalalalalal", "resposta"],
+    message: `Pasta is originally from: \n ${chalk.bgRed(
+      "Not what you think!",
+    )}`,
+    choices: ["chinese", "italian", "brazillian", "spanish"],
   });
-  return handleAnswer(answers.question4 == "resposta");
+  return handleAnswer(answers.question4 == "chinese");
 }
 
 async function handleAnswer(isCorrect) {
