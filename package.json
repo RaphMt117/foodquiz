@@ -1,6 +1,6 @@
 {
   "name": "foodquiz",
-  "version": "1.0.1",
+  "version": "0.0.2",
   "description": "A short game as my first CLI project using node.",
   "main": "index.js",
   "type": "module",
