@@ -49,7 +49,7 @@ async function question2() {
   const answers = await inquirer.prompt({
     name: "question2",
     type: "list",
-    message: "Which of these foods is known to be French: ",
+    message: "Which of these food is known to be French: ",
     choices: ["hamburguer", "beans", "croissant", "pasta"],
   });
   return handleAnswer(answers.question2 == "croissant");
